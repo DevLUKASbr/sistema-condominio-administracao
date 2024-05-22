@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="./src/style.css">
+	<link rel="stylesheet" href="src/style.css">
 
 	<title>AdminHub</title>
 </head>
@@ -18,7 +18,7 @@
         </a>
         <ul class="side-menu top">
             <li class="active">
-                <a href="#" onclick="showContent('dashboard-content')">
+                <a href="#" onclick="showContent('#dashboard-content')">
                     <i class='bx bxs-dashboard' ></i>
                     <span class="text">Dashboard</span>
                 </a>
@@ -30,7 +30,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" onclick="showContent('análise-content')">
+                <a href="#" onclick="showContent('analise-content')">
                     <i class='bx bxs-doughnut-chart' ></i>
                     <span class="text">Análise</span>
                 </a>
@@ -62,7 +62,8 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="logout">
+				<!-- resolver login/logout -->
+                <a href="#" class="logout" onclick="logout()" >
                     <i class='bx bxs-log-out-circle' ></i>
                     <span class="text">Sair</span>
                 </a>
@@ -340,7 +341,7 @@
 			</main>
         </section>
 
-		<section id="entregas-content" class="content-item hidden">
+		<section id="analise-content" class="content-item hidden">
             <main>
 				<div class="head-title">
 					<div class="left">
@@ -460,7 +461,7 @@
 	</section>
 
 
-	<section id="entregas-content" class="content-item hidden">
+	<section id="equipe-content" class="content-item hidden">
 		<main>
 			<div class="head-title">
 				<div class="left">
@@ -544,7 +545,7 @@
 				</div>
 	</section>
 
-	<section id="entregas-content" class="content-item hidden">
+	<section id="registros-content" class="content-item hidden">
 		<main>
 			<div class="head-title">
 				<div class="left">
@@ -631,7 +632,7 @@
 	</section>
 
 
-    <script src="./src/script.js"></script>
+    <script src="src/script.js"></script>
 
 </body>
 </html>

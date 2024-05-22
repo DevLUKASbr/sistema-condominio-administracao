@@ -11,6 +11,14 @@ allSideMenu.forEach(item=> {
 	})
 });
 
+function showContent(elemento) {
+    // Seleciona o elemento alvo pelo ID
+    const targetElement = document.getElementById(elemento);
+
+    // Rola até o elemento
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+}
+
 
 
 
